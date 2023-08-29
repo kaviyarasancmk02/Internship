@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <script defer src="calculator.js"></script>
+</head>
+<body>
+    <div class="w-full h-screen bg-neutral-800 grid place-content-center">
+        <div class="bg-transparent border border-gray-500 rounded-lg w-auto h-auto grid place-content-center gap-2">
+            <div class="w-full h-full">
+                <input id="answere" type="text" class="w-11/12 h-auto text-gray-300 bg-transparent text-lg border border-gray-500 outline-none rounded-lg p-5 m-5" value="0">
+            </div>
+            <div class="flex flex-row border-t border-gray-500 rounded-lg">
+                <div class="p-5 pr-0 grid grid-cols-3 gap-2 ">
+                    <button id="num9" onclick="Display('9')" class="bg-gray-400 px-10 py-2 rounded-md" value="9">9</button>
+                    <button id="num8" onclick="Display('8')" class="bg-gray-400 px-10 py-2 rounded-md" value="8">8</button>
+                    <button id="num7" onclick="Display('7')" class="bg-gray-400 px-10 py-2 rounded-md" value="7">7</button>
+                    <button id="num6" onclick="Display('6')" class="bg-gray-400 px-10 py-2 rounded-md" value="6">6</button>
+                    <button id="num5" onclick="Display('5')" class="bg-gray-400 px-10 py-2 rounded-md" value="5">5</button>
+                    <button id="num4" onclick="Display('4')" class="bg-gray-400 px-10 py-2 rounded-md" value="4">4</button>
+                    <button id="num3" onclick="Display('3')" class="bg-gray-400 px-10 py-2 rounded-md" value="3">3</button>
+                    <button id="num2" onclick="Display('2')" class="bg-gray-400 px-10 py-2 rounded-md" value="2">2</button>
+                    <button id="num1" onclick="Display('1')" class="bg-gray-400 px-10 py-2 rounded-md" value="1">1</button>
+                    <button id="num0" onclick="Display('0')" class="bg-gray-400 px-10 py-2 rounded-md" value="0">0</button>
+                    <button id="numDot" onclick="Display('.')" class="bg-gray-400 px-10 py-2 rounded-md" value=".">.</button>
+
+                    <button id="numEqual" onclick="Calculat()" class="bg-gray-400 px-10 py-2 rounded-md" value="=">=</button>
+                </div>
+                <div class="p-5 pl-2 grid grid-cols-1  gap-2">
+                    <button id="addition" onclick="Display('+')" class="bg-gray-400 px-10 py-2 rounded-md" value="+">+</button>
+                    <button id="subraction" onclick="Display('-')" class="bg-gray-400 px-10 py-2 rounded-md" value="-">-</button>
+                    <button id="multiplication" onclick="Display('*')" class="bg-gray-400 px-10 py-2 rounded-md" value="*">*</button>
+                    <button id="devide" onclick="Display('/')" class="bg-gray-400 px-10 py-2 rounded-md" value="/">/</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
