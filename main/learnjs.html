@@ -3,17 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Music App</title>
     <script defer src="learnjs.js"></script>
-    <link rel="stylesheet" href="output.css">
+    <!-- <link rel="stylesheet" href="output.css"> -->
+    <link rel="stylesheet" href="stylejs.css">
 </head>
 <body>
-    <div id="container">
-        <h1 id="head1">Hello World!</h1>
-        <h1 id="head2">Hello Earth</h1>
-        <div>
-            <button id="button" onclick="changeText1()">Next</button>
-            <button id="button" onclick="changeText2()">Back</button>
+    <div class="app">
+        <header>
+            <h1>Tap Music</h1>
+            <P>Make Music with only one tap</P>
+        </header>
+        <div class="visual"></div>
+        <div class="pads">
+            <div class="pad1">
+                <audio class="sound" src="/Music/sound.wav"></audio>
+            </div>
+            <div class="pad2">
+                <audio class="sound" src="/Music/sound.wav"></audio>
+            </div>
+            <div class="pad3">
+                <audio class="sound" src="/Music/sound.wav"></audio>
+            </div>
+            <div class="pad4">
+                <audio class="sound" src="/Music/sound.wav"></audio>
+            </div>
+            <div class="pad5">
+                <audio class="sound" src="/Music/sound.wav"></audio>
+            </div>
+            <div class="pad6">
+                <audio class="sound" src="/Music/sound.wav"></audio>
+            </div>
         </div>
     </div>
 </body>
